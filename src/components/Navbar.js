@@ -36,6 +36,13 @@ const links = [
     external: true, // Indicate this link is external
     url: "https://drive.google.com/file/d/1lUt3evKdWhtNLnLliDoBX2-DqPYMMOqo/view", // Google Drive URL
   },
+  {
+    name: "Contact Us",
+    to: "contact",
+    active: "contact",
+    email: "jeetmehta3012@gmail.com",
+    type: "email",
+  },
 ];
 
 // This function is used to create a scroll offset to compensate for the navbar
@@ -78,6 +85,10 @@ export default function Navbar({ darkMode, handleClick, active, setActive }) {
                 rel="noopener noreferrer"
                 className={Style.link}
               >
+                <p style={{ padding: "0.5rem 0" }}>{link.name}</p>
+              </a>
+            ) : link.type === "email" ? (
+              <a href={`mailto:${link.email}`} className={Style.link}>
                 <p style={{ padding: "0.5rem 0" }}>{link.name}</p>
               </a>
             ) : (
