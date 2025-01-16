@@ -13,16 +13,16 @@ const links = [
     to: "",
     active: "home",
   },
+  // {
+  //   name: info.initials,
+  //   type: "initials",
+  //   to: "",
+  //   active: "home",
+  // },
   {
     name: "About Me",
     to: "about",
     active: "about",
-  },
-  {
-    name: info.initials,
-    type: "initials",
-    to: "",
-    active: "home",
   },
   {
     name: "Portfolio",
